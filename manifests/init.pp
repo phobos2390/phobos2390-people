@@ -36,8 +36,13 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class people::user {
-  file { "/home/vagrant/.ssh":
+  file { "/home/vagrant/.ssh/":
     ensure => directory,
-    source => /vagrant/.ssh
-  }
+    path => "/home/vagrant/.ssh/",
+    source => "/vagrant/.ssh/",
+    owner => "vagrant",
+    replace => true,
+    recurse => true,
+    ignore => ['authorized_keys'],
+  } 
 }
