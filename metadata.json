@@ -1,0 +1,14 @@
+{
+  "name": "phobos2390-people",
+  "version": "0.1.0",
+  "author": "phobos2390",
+  "summary": "Boilerplate scripts for individual people",
+  "license": "Apache 2.0",
+  "source": "git@github.com:phobos2390/phobos2390-people.git",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
