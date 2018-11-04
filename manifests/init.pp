@@ -35,7 +35,9 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class people {
-
-
+class people::user {
+  file { "/home/vagrant/.ssh":
+    ensure => directory,
+    source => /vagrant/.ssh
+  }
 }
